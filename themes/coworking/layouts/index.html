@@ -1,0 +1,64 @@
+{{ define "main" }}
+<!--{{ .Content }}-->
+{{ with .Site.GetPage "page" "espace.md" }}{{.Content}}{{end}}
+
+<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="images/space/1.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="images/space/1.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="images/space/1.jpg" alt="">
+      </li>
+    </ul>
+  </div>
+</section>
+
+{{ with .Site.GetPage "page" "asso.md" }}{{.Content}}{{end}}
+
+{{ with .Site.GetPage "page" "prices.html" }}{{.Content}}{{end}}
+
+
+<h2>Quelques Co-workers</h2>
+<h3>Amabla abrite aussi bien des startups que des freelances. Voici quelques uns de nos Co-workers</h3>
+<div class="coworkers">
+  {{ range shuffle .Params.coworkers }}
+  <div class="item-space">
+    <div class="space-image">
+      <img src="/images/coworkers/{{ .image }}" />
+    </div>
+    <p>{{ .name }}</p>
+    <p class="line">{{ .line }}</p>
+  </div>
+  {{ end }}
+  <div class="item-space">
+    <div class="space-image">
+      <img src="/images/coworkers/bientotvous.gif" />
+    </div>
+    <p>Bientôt vous?</p>
+  </div>
+</div>
+
+<h2>Vous voulez en savoir plus ?</h2>
+
+<div class="contact">
+  <p>N'hésitez pas à nous contacter ou à venir nous voir!</p>
+<p>
+  Association Amabla<br>
+  10 rue du Pérou<br>
+  69100 Villeurbanne<br>
+  <a href="mailto:contact@amabla.org">contact@amabla.org</a><br>
+</p>
+
+</div>
+<script>
+  new Splide( '#image-carousel', {
+    type    : 'loop',
+    autoplay: 'play',
+  }  ).mount();
+</script>
+{{ end }}

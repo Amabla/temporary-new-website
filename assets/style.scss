@@ -1,0 +1,140 @@
+@import 'jekyll-theme-cayman';
+
+.small-image {
+  height: 5rem;
+}
+
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/space/1.jpg');
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover, cover;
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+
+  h1 {
+    color: #fff;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 40px;
+    font-family: Georgia, Times, Times New Roman, serif;
+
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.main-content {
+  padding-top: 50px;
+
+  h2 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-family: Georgia, Times, Times New Roman, serif;
+    text-align: center;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    color: #777777;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.coworkers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 200px;
+
+  .space-image img {
+    text-align: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    &.line {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.contact {
+  background-color: #fccf35;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.retour {
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.price-container {
+  display: flex;
+
+  div {
+    width: 50%;
+    text-align: center;
+
+    p.heading {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    p.price {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    p.icon {
+      font-size: 4rem;
+      margin: 0;
+    }
+    p.content {
+      color: #777777;
+      font-size: 0.8rem;
+    }
+  }
+}

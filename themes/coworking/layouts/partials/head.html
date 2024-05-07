@@ -1,0 +1,8 @@
+<head>
+  <title>{{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <script src="js/splide.min.js"></script>
+  <link href=" css/splide.min.css " rel="stylesheet">
+</head>
