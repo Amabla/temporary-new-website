@@ -61,6 +61,7 @@
 .coworkers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item-space {
@@ -68,12 +69,12 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  width: 200px;
+  width: 170px;
 
   .space-image img {
     text-align: left;
-    width: 150px;
-    height: 150px;
+    width: 138px;
+    height: 138px;
     border-radius: 50%;
   }
 
