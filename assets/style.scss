@@ -5,6 +5,8 @@
 }
 
 .page-header {
+  position: sticky;
+  z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/space/1.jpg');
   background-position-x: center;
   background-position-y: center;
@@ -32,6 +34,7 @@
 }
 
 .main-content {
+  isolation: isolate;
   padding-top: 50px;
 
   h2 {

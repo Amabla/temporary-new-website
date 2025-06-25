@@ -91,15 +91,18 @@ a {
   background-color: $header-bg-color;
 
   @include large {
-    padding: 7rem 8rem;
+    top: -100px;
+    padding: 120px 8rem 10px;;
   }
 
   @include medium {
-    padding: 5rem 6rem;
+    top: -80px;
+    padding: 100px 6rem 10px;;
   }
 
   @include small {
-    padding: 3rem 4rem;
+    top: -50px;
+    padding: 70px 4rem 10px;;
   }
 }
 
