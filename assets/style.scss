@@ -7,7 +7,7 @@
 .page-header {
   position: sticky;
   z-index: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/space/1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/space/3.jpeg');
   background-position-x: center;
   background-position-y: center;
   background-size: cover, cover;
@@ -141,4 +141,9 @@ h1 {
       font-size: 0.8rem;
     }
   }
+}
+
+// override splide
+.splide__slide img {
+  height: 100%;
 }
